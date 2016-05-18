@@ -1,0 +1,228 @@
+PUT /airline
+{
+    "mappings": {
+         "onTimePerformance": {
+            "properties": {
+               "ActualElapsedTime": {
+                  "type": "long"
+               },
+               "AirTime": {
+                  "type": "long"
+               },
+               "AirlineID": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "ArrDel15": {
+                  "type": "long"
+               },
+               "ArrDelay": {
+                  "type": "long"
+               },
+               "ArrDelayMinutes": {
+                  "type": "long"
+               },
+               "ArrTime": {
+                  "type": "date",
+                  "format": "strict_date_optional_time||epoch_millis"
+               },
+               "ArrTimeBlk": {
+                  "type": "string"
+               },
+               "ArrivalDelayGroups": {
+                  "type": "long"
+               },
+               "CRSArrTime": {
+                  "type": "date",
+                  "format": "strict_date_optional_time||epoch_millis"
+               },
+               "CRSDepTime": {
+                  "type": "date",
+                  "format": "strict_date_optional_time||epoch_millis"
+               },
+               "CRSElapsedTime": {
+                  "type": "long"
+               },
+               "CancellationCode": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "Cancelled": {
+                  "type": "long"
+               },
+               "Carrier": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "CarrierDelay": {
+                  "type": "long"
+               },
+               "DepDel15": {
+                  "type": "long"
+               },
+               "DepDelay": {
+                  "type": "long"
+               },
+               "DepDelayMinutes": {
+                  "type": "long"
+               },
+               "DepTime": {
+                  "type": "date",
+                  "format": "strict_date_optional_time||epoch_millis"
+               },
+               "DepTimeBlk": {
+                  "type": "string"
+               },
+               "DepartureDelayGroups": {
+                  "type": "long"
+               },
+               "Dest": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "DestAirportID": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "DestAirportSeqID": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "DestCityMarketID": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "DestCityName": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "DestState": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "DestStateFips": {
+                  "type": "long"
+               },
+               "DestStateName": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "DestWac": {
+                  "type": "long"
+               },
+               "Distance": {
+                  "type": "long"
+               },
+               "DistanceGroup": {
+                  "type": "long"
+               },
+               "DivActualElapsedTime": {
+                  "type": "long"
+               },
+               "DivAirportLandings": {
+                  "type": "long"
+               },
+               "DivArrDelay": {
+                  "type": "long"
+               },
+               "DivDistance": {
+                  "type": "long"
+               },
+               "DivReachedDest": {
+                  "type": "long"
+               },
+               "Diverted": {
+                  "type": "long"
+               },
+               "FirstDepTime": {
+                  "type": "long"
+               },
+               "FlightDate": {
+                  "type": "date",
+                  "format": "strict_date_optional_time||epoch_millis"
+               },
+               "FlightNum": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "Flights": {
+                  "type": "long"
+               },
+               "LateAircraftDelay": {
+                  "type": "long"
+               },
+               "LongestAddGTime": {
+                  "type": "long"
+               },
+               "NASDelay": {
+                  "type": "long"
+               },
+               "Origin": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "OriginAirportID": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "OriginAirportSeqID": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "OriginCityMarketID": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "OriginCityName": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "OriginState": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "OriginStateFips": {
+                  "type": "long"
+               },
+               "OriginStateName": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "OriginWac": {
+                  "type": "long"
+               },
+               "SecurityDelay": {
+                  "type": "long"
+               },
+               "TailNum": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "TaxiIn": {
+                  "type": "long"
+               },
+               "TaxiOut": {
+                  "type": "long"
+               },
+               "TotalAddGTime": {
+                  "type": "long"
+               },
+               "UniqueCarrier": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "WeatherDelay": {
+                  "type": "long"
+               },
+               "WheelsOff": {
+                  "type": "date",
+                  "format": "strict_date_optional_time||epoch_millis"
+               },
+               "WheelsOn": {
+                  "type": "date",
+                  "format": "strict_date_optional_time||epoch_millis"
+               }
+            }
+         }
+      }
+}

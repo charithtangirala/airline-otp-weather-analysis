@@ -1,0 +1,31 @@
+{
+  "name": "irop-predictor",
+  "version": "1.0.0",
+  "description": "IROP predictor for flight schedules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "go": "babel-node src/index.js --presets es2015",
+    "go-airline": "babel-node src/airline/index.js --presets es2015",
+    "go-weather": "babel-node src/weather/index.js --presets es2015"
+  },
+  "author": "Charith Tangirala",
+  "license": "ISC",
+  "dependencies": {
+    "csv-to-json": "^0.1.2",
+    "elasticsearch": "^10.1.3",
+    "fast-csv": "^1.0.0",
+    "lodash": "^4.3.0",
+    "moment": "^2.11.2",
+    "q": "^1.4.1",
+    "request": "^2.69.0",
+    "url": "^0.11.0",
+    "xml2js": "^0.4.16"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-core": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13",
+    "log4js": "^0.6.31"
+  }
+}

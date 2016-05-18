@@ -1,0 +1,205 @@
+PUT /weather
+{
+      "mappings": {
+         "historicalBymesowest": {
+            "properties": {
+                "dateTimeUTC": {
+                    "type": "date",
+                    "format": "strict_date_optional_time||epoch_millis"
+                },
+               "ceiling": {
+                  "type": "double"
+               },
+               "cloudLayer1Coverage": {
+                  "type": "double"
+               },
+               "cloudLayer2Coverage": {
+                  "type": "double"
+               },
+               "cloudLayer3Coverage": {
+                  "type": "double"
+               },
+               "day": {
+                  "type": "long"
+               },
+               "dewPoint": {
+                  "type": "double"
+               },
+               "hour": {
+                  "type": "long"
+               },
+               "iata": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "min": {
+                  "type": "long"
+               },
+               "month": {
+                  "type": "long"
+               },
+               "peakWindDirection": {
+                  "type": "double"
+               },
+               "precipitation1hr": {
+                  "type": "double"
+               },
+               "precipitation24hr": {
+                  "type": "double"
+               },
+               "precipitation3hr": {
+                  "type": "double"
+               },
+               "precipitation6hr": {
+                  "type": "double"
+               },
+               "reletiveHumidity": {
+                  "type": "double"
+               },
+               "temperatureInFahrenheit": {
+                  "type": "double"
+               },
+               "timezone": {
+                  "type": "string",
+                  "index": "not_analyzed"
+               },
+               "visibility": {
+                  "type": "double"
+               },
+               "weatherConditions": {
+                  "type": "double"
+               },
+               "windDirection": {
+                  "type": "double"
+               },
+               "windGust": {
+                  "type": "double"
+               },
+               "windSpeed": {
+                  "type": "double"
+               },
+               "year": {
+                  "type": "long"
+               }
+            }
+         },
+         "ice": {
+            "properties": {
+               "location": {
+                  "type": "geo_point"
+               },
+               "timestamp": {
+                  "type": "date",
+                  "format": "strict_date_optional_time||epoch_millis"
+               },
+               "type": {
+                  "type": "string",
+                  "fields": {
+                      "raw":   { "type": "string", "index": "not_analyzed" }
+                  }
+               },
+               "units": {
+                  "type": "string"
+               },
+               "value": {
+                  "type": "long"
+               }
+            }
+         },
+         "fire": {
+            "properties": {
+               "areas": {
+                  "type": "string"
+               },
+               "location": {
+                  "type": "geo_point"
+               },
+               "timestamp": {
+                  "type": "date",
+                  "format": "strict_date_optional_time||epoch_millis"
+               },
+               "type": {
+                  "type": "string",
+                  "fields": {
+                      "raw":   { "type": "string", "index": "not_analyzed" }
+                   }
+               },
+               "units": {
+                  "type": "string"
+               }
+            }
+         },
+         "convectiveHazards": {
+            "properties": {
+               "location": {
+                  "type": "geo_point"
+               },
+               "timestamp": {
+                  "type": "date",
+                  "format": "strict_date_optional_time||epoch_millis"
+               },
+               "type": {
+                  "type": "string",
+                  "fields": {
+                      "raw":   { "type": "string", "index": "not_analyzed" }
+
+                  }
+               },
+               "units": {
+                  "type": "string"
+               },
+               "value": {
+                  "type": "long"
+               }
+            }
+         },
+         "wind": {
+            "properties": {
+               "location": {
+                  "type": "geo_point"
+               },
+               "timestamp": {
+                  "type": "date",
+                  "format": "strict_date_optional_time||epoch_millis"
+               },
+               "type": {
+                  "type": "string",
+                  "fields": {
+                      "raw":   { "type": "string", "index": "not_analyzed" }
+
+                  }
+               },
+               "units": {
+                  "type": "string"
+               },
+               "value": {
+                  "type": "long"
+               }
+            }
+         },
+         "snow": {
+            "properties": {
+               "location": {
+                  "type": "geo_point"
+               },
+               "timestamp": {
+                  "type": "date",
+                  "format": "strict_date_optional_time||epoch_millis"
+               },
+               "type": {
+                  "type": "string",
+                  "fields": {
+                      "raw":   { "type": "string", "index": "not_analyzed" }
+
+                  }
+               },
+               "units": {
+                  "type": "string"
+               },
+               "value": {
+                  "type": "long"
+               }
+            }
+         }
+      }
+   }
